@@ -1,0 +1,24 @@
+// decimal to binary
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int dec,temp,bin[16],j,i;
+printf("Enter the decimal number \n");
+scanf("%d",&dec);
+ temp=dec;
+ i=0;
+ while(dec>0)
+ {
+ bin[i]=dec%2;
+ dec=dec/2;
+ i++;
+ }
+ printf("The binary convertion of %d is ",temp);
+ for(j=i-1;j>=0;j--)
+ {
+ printf("%d",bin[j]);
+ }
+ printf("\n");
+}
+
